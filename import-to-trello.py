@@ -27,14 +27,14 @@ class TrelloCSVImporter:
         for board in boards:
             if board.name == board_name:
                 return board
-        raise "Board Not Found"
+        raise LookupError("Board Not Found")
     
     def get_list(self, board, list_name):
         lists = board.all_lists()
         for list in lists:
             if list.name == list_name:
                 return list
-        raise "List Not Found"
+        raise LookupError("List Not Found")
     
     def process_input(self, filename):
         l = list()
@@ -42,7 +42,7 @@ class TrelloCSVImporter:
         csv_reader = csv.reader(csvfile, delimiter='|')
         for row in csv_reader:
             if len(row) != 3:
-                raise "Improper data format: " + row
+                raise StandardError("Improper data format: " + row)
             l.append(row)
         return l
     
@@ -53,7 +53,7 @@ class TrelloCSVImporter:
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        raise "Wrong arguments. Usage: python import-to-trello.py board_name list_name filename"
+        raise EnvironmentError("Wrong arguments. Usage: python import-to-trello.py board_name list_name filename")
     importer = TrelloCSVImporter(sys.argv[1],sys.argv[2],sys.argv[3])
     importer.start()
     
