@@ -1,0 +1,46 @@
+python3 import-to-trello.py HMH what input2.csv
+
+atom -d
+
+json beautify: https://codebeautify.org/jsonviewer/bbe0d1
+
+https://github.com/sarumont/py-trello
+https://trello.com/b/FcTw02R1/py-trello
+
+https://discuss.atom.io/t/ask-for-help-to-understand-decoration-example/48355/3
+https://developers.trello.com/reference#list-actions
+https://developers.trello.com/docs/getting-and-setting-custom-data
+https://trello.com/b/OE1viHrW/hmh
+https://github.com/laurenceputra/csv-to-trello-list/blob/master/import-to-trello.py
+https://www.google.com/search?ei=lcF5XKz5MNHH5gKsqb_YAg&q=install+trello+python+api&oq=install+trello+python+api&gs_l=psy-ab.3...2599.3433..3566...0.0..0.131.749.2j5......0....1..gws-wiz.......0i71j33i10.VlXI3LqMgKU
+https://stackoverflow.com/questions/39233459/how-to-get-set-trello-custom-fields-using-the-api#
+
+https://www.google.com/search?ei=2815XKunFqvb0gLd5LWIBA&q=trello+api+json&oq=trello+api+json&gs_l=psy-ab.3..0j0i22i30.159315.162252..162460...2.0..0.182.2708.0j17......0....1..gws-wiz.......0i71j35i39j0i67j0i131j0i131i67j0i20i263.xa0EkGQ3nfA
+https://blog.trello.com/trello-custom-fields-with-mobile-more-fields-api
+https://developers.trello.com/docs/getting-started-custom-fields#section-getting-customfielditems-for-cards
+https://codebeautify.org/jsonviewer/bbe0d1
+https://stackoverflow.com/questions/7570156/creating-a-nested-json-request-with-python
+https://stackoverflow.com/questions/29980798/where-does-pip-install-its-packages/45309460
+https://developers.trello.com/v1.0/reference#customfielditemsid
+https://developers.trello.com/docs/clientjs
+https://stackoverflow.com/questions/7451600/jsonobject-how-to-get-a-value
+https://stackoverflow.com/questions/40847029/get-children-of-json-object-python
+https://stackoverflow.com/questions/15476983/deserialize-a-json-string-to-an-object-in-python/21502348
+https://stackoverflow.com/questions/4613000/what-is-the-cls-variable-used-for-in-python-classes
+https://www.youtube.com/watch?v=jiMguaZQREU
+https://pythonspot.com/tag/json/
+https://pythonspot.com/python-dictionaries/
+https://stackoverflow.com/questions/2225038/determine-the-type-of-an-object
+https://www.google.com/search?q=python+print+part+of+dict&oq=python+print+part+of+dict&aqs=chrome..69i57j0.6482j0j7&sourceid=chrome&ie=UTF-8
+https://stackoverflow.com/questions/26745519/converting-dictionary-to-json-in-python
+https://atom.io/docs/api/v1.21.0/TextEditor#instance-decorateMarker
+https://medium.com/@eshwaren/dark-theme-for-chrome-developer-tools-f0fd20fb49cf
+https://blog.atom.io/2014/07/24/decorations.html
+https://github.com/atom/decoration-example
+https://www.google.com/search?ei=R756XPG1K6Tv_Qbt16O4Bw&q=atom+set+editor+in+console&oq=atom+set+editor+in+console&gs_l=psy-ab.3..33i22i29i30l3.4844.6840..6948...0.0..0.95.919.11......0....1..gws-wiz.......0i71j0i22i30.WtPLC7IyMa4
+https://www.google.com/search?ei=2756XNaPCcGvggeogrHYBg&q=atom+console+uncaught+ReferenceError%3A+editor+is+not+defined&oq=atom+console+uncaught+ReferenceError%3A+editor+is+not+defined&gs_l=psy-ab.3...2961.4128..4215...0.0..1.187.1138.10j3......0....1..gws-wiz.......35i304i39j0i13j0i8i7i30j0i8i13i30._vCD8GV28NE
+https://discuss.atom.io/t/cannot-get-active-text-editor-in-tests/24285
+https://atom.io/docs/api/v1.34.0/TextEditor
+https://smallbusiness.chron.com/create-shortcuts-websites-desktop-mac-43053.html
+https://atom.io/docs/api/v1.34.0/TextEditor#instance-onDidChangeTitle
+https://chrome.google.com/webstore/detail/tabcopy/micdllihgoppmejpecmkilggmaagfdmb/related?hl=en-US
