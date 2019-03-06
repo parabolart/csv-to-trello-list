@@ -2,3 +2,5 @@ venv
 .env
 master*
 *.xlsx
+__pycache__
+19*

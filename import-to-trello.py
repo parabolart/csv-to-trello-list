@@ -10,14 +10,21 @@ hmh = {
     'client': '5c7812a444111f835dd0ca43',
     'poc': '5c7812b0a95d3333486e74c4',
     'contactnumber': '5c7812bb8ba143056f12ebae',
-    'bidvalue': '5c7812e25fe9700eb0f72c03',
-    'ptd': '5c781334b9fe9d59892888cf',
-    'balance': '5c78133fd2b34b48ed231e7e',
+    'bid': '5c7812e25fe9700eb0f72c03',
+    'ptd': '5c7e57035f31ed2560329e36',
+    'balance': '5c7e570f0058da4e21c83c38',
 
     'SRT': '5c78123e2bc98859a68627f7',
     'JAD': '5c78123201bc4c7950720e72',
     'HMH': '5c7812415f83d8214607414c'
 }
+
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
 
 class TrelloCSVImporter:
 
@@ -71,9 +78,12 @@ class TrelloCSVImporter:
         new_card._set_remote_attribute_custom_field(hmh['client'],client)
         new_card._set_remote_attribute_custom_field(hmh['poc'],poc)
         new_card._set_remote_attribute_custom_field(hmh['contactnumber'],contactnumber)
-        #new_card._set_remote_attribute_custom_field(hmh['bid'],bid) number?
-        new_card._set_remote_attribute_custom_field(hmh['ptd'],ptd)
-        new_card._set_remote_attribute_custom_field(hmh['balance'],balance)
+        if is_number(bid):
+            new_card._set_remote_attribute_custom_field_num(hmh['bid'],bid)
+        if is_number(ptd):
+            new_card._set_remote_attribute_custom_field_num(hmh['ptd'],ptd)
+        if is_number(balance):
+            new_card._set_remote_attribute_custom_field_num(hmh['balance'],balance)
         if leadsource != '':
             new_card._set_remote_attribute_custom_field_list(hmh['leadsource'],hmh[leadsource])
         print(new_card.fetch_custom_fields_hmh())
